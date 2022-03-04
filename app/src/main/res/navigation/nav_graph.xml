@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productsFragment">
+
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/newProductFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.newProduct.NewProductFragment"
+        android:label="fragment_new_product"
+        tools:layout="@layout/fragment_new_product" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" />
+    <fragment
+        android:id="@+id/stripeSetupFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.StripeSetupFragment"
+        android:label="fragment_stripe_setup"
+        tools:layout="@layout/fragment_stripe_setup" />
+    <fragment
+        android:id="@+id/productStandardDetailsFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.newProduct.ProductStandardDetailsFragment"
+        android:label="fragment_product_standard_details"
+        tools:layout="@layout/fragment_product_standard_details" />
+    <fragment
+        android:id="@+id/productCustomDetails"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.newProduct.ProductCustomDetails"
+        android:label="fragment_product_custom_details"
+        tools:layout="@layout/fragment_product_custom_details" />
+    <fragment
+        android:id="@+id/productShopViewFragment"
+        android:name="com.handcraftedcreator.handcraftedcreator.ui.ProductShopViewFragment"
+        android:label="fragment_product_shop_view"
+        tools:layout="@layout/fragment_product_shop_view" />
+</navigation>

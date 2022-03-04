@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.handcraftedcreator.handcraftedcreator.ui.ProfileFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/profile_header_text"
+        android:text="Add Profile Information for Your Shop"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/profile_image"
+        android:src="@drawable/ic_profile"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_header_text"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_rotate_img"
+        android:background="@drawable/ic_rotate"
+        app:layout_constraintEnd_toEndOf="@id/profile_image"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/profile_name"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:gravity="center"
+        android:background="@drawable/et_background"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/profile_shop_name"
+        android:hint="Shop Name"
+        android:inputType="textCapWords"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/et_background"
+        app:layout_constraintTop_toBottomOf="@id/profile_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:id="@+id/profile_shop_description"
+        android:hint="Shop Description"
+        android:inputType="textCapSentences|textMultiLine"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/et_background"
+        app:layout_constraintTop_toBottomOf="@id/profile_shop_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/profile_next_btn"
+        android:text="Next"
+        android:background="@drawable/et_background"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

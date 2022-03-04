@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hand Crafted Creator</string>
+    <string name="ship_engine_key">TEST_evPIs0R2LkAq0Z9/rvv4HItM7o6NVI+U6lVdnrb6sRY</string>
+
+    <string-array name="carierList">
+        <item>se-1584384</item>
+        <item>se-1584385</item>
+        <item>se-1584387</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stripe_info">Set up Stripe.\nYou will need personal information such as: \nSocial Security Number\nBanking Info.\nGovernment Id\n We do not collect this information! It is only to create your Stripe account</string>
+    <string name="standard_description">Add the standard details about your product!\nLength, Width, Height, and Weight are\nRequired for shipping purposes.\n(Measurements in inches)</string>
+
+    <string-array name="weight_units">
+        <item>Ounces</item>
+        <item>Pounds</item>
+    </string-array>
+</resources>

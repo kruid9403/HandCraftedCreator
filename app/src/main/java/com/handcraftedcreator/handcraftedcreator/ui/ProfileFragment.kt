@@ -38,8 +38,8 @@ class ProfileFragment : BaseFragment(), View.OnClickListener {
 
     private fun addPhotoToStorage(it: Bitmap) {
         firebaseManager.profileImage().child(auth.uid.toString()).putFile(imageManager.bitmapToUri(it, requireContext())).addOnCompleteListener{
-            firebaseManager.profileImage().child(auth.uid.toString()).downloadUrl.addOnCompleteListener {
-                imgUrl = it.result.toString()
+            firebaseManager.profileImage().child(auth.uid.toString()).downloadUrl.addOnCompleteListener { task ->
+                imgUrl = task.result.toString()
             }
         }
     }
